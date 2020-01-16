@@ -3,3 +3,7 @@ services:
   - docker
 script:
   - docker image build -t ralphmorphy101/mytravisdockerproject .
+deploy:
+  provider: script
+  script: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD && docker push ralphmorphy101/mytravisdockerproject
+  
