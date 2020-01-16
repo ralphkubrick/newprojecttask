@@ -3,4 +3,3 @@ services:
   - docker
 script:
   - docker image build -t ralphmorphy101/mytravisdockerproject .
-  - docker image push ralphmorphy101/mytravisdockerproject
