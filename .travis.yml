@@ -1,5 +1,5 @@
 language: python
 services:
   - docker
-before_install:
+script:
   - docker image build -t ralphmorphy101/mytravisdockerproject .
